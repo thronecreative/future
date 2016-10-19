@@ -3188,9 +3188,7 @@ a {
 .logo__invert .letter {
   fill: #cd2127; }
 .logo__invert:hover .letter {
-  fill: #fff; }
-.logo__invert:hover .background {
-  fill: #cd2127; }
+  fill: #333; }
 
 .close-btn {
   position: fixed;
@@ -3205,16 +3203,19 @@ a {
     transition: all 0.3s ease-in-out; }
 
 #contact-btn {
+  transition: all 0.3s ease-in-out;
   position: fixed;
   cursor: pointer;
-  right: 20px;
+  right: -20px;
   bottom: 20px;
   font-size: 40px;
   font-weight: bold;
   color: #fff;
-  z-index: 1000;
+  z-index: 50;
   line-height: 40px;
   text-align: right; }
+  #contact-btn:hover {
+    color: #333; }
 
 #intro {
   position: fixed;
@@ -3223,7 +3224,8 @@ a {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  z-index: 10; }
+  z-index: 10;
+  background-color: #cd2127; }
   #intro .intro__background {
     position: fixed;
     top: -100px;
@@ -3321,6 +3323,9 @@ a {
   display: none;
   background-color: #333;
   color: #fff; }
+  #voice .page__inner {
+    justify-content: flex-end;
+    padding-right: 300px; }
   #voice .page__art {
     width: 100%;
     text-align: right; }
@@ -3371,6 +3376,9 @@ a {
 
 #astro {
   display: none; }
+  #astro .page__inner {
+    justify-content: flex-end;
+    padding-right: 300px; }
   #astro .page__art img {
     height: 100%;
     width: auto; }

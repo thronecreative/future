@@ -112,7 +112,7 @@ $( document ).ready(function() {
 		}
 
 
-		var Random_Line = function(canvas, settings = {}, style = {}){
+		var Random_Line = function(canvas, settings, style){
 		    // line settings
 		    this.canvas = canvas;
 		    this.points = settings.points || 6;
@@ -139,8 +139,13 @@ $( document ).ready(function() {
 		    }
 		    
 		    // line style
-		    this.line_weight = style.weight || 4;
-		    this.line_color = style.color || "#fff";
+		    this.line_weight = 4;
+		    if(style === undefined){
+		    	this.line_color = "#fff";
+		    }else{
+		    	this.line_color = style.color
+		    }
+		    
 
 		    this.context = this.canvas.get(0).getContext('2d');
 		    
@@ -206,6 +211,7 @@ $( document ).ready(function() {
 			$info_1 = $('#voice .page__info'),
 			$info_2 = $('#invest .page__info'),
 			$info_3 = $('#astro .page__info'),
+			$info_4 = $('#contact .page__info'),
 			
 			$container = $('body'),
 			container_w = $container.width(),
@@ -302,6 +308,14 @@ $( document ).ready(function() {
 		});
 
 		TweenMax.to($info_3, speed, { 
+			css: { 
+				transform: ' translateX(' + left / 40 + 'px) translateY(' + top / 24 + 'px)' 
+			}, 
+			ease:Expo.easeOut, 
+			overwrite: 'all' 
+		});
+
+		TweenMax.to($info_4, speed, { 
 			css: { 
 				transform: ' translateX(' + left / 40 + 'px) translateY(' + top / 24 + 'px)' 
 			}, 

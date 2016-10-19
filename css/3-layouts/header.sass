@@ -22,9 +22,9 @@
 
 	&:hover
 		.letter
-			fill: #fff
+			fill: #333
 		.background
-			fill: #cd2127
+			//fill: #333
 
 
 .close-btn
@@ -41,16 +41,20 @@
 		transition: all $trans_speed $trans_ease
 
 #contact-btn
+	transition: all $trans_speed $trans_ease
 	position: fixed
 	cursor: pointer
-	right: 20px
+	right: -20px
 	bottom: 20px
 	font-size: 40px
 	font-weight: bold
 	color: #fff
-	z-index: 1000
+	z-index: 50
 	line-height: 40px
 	text-align: right
+
+	&:hover
+		color: #333
 
 
 

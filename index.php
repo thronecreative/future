@@ -3,7 +3,7 @@
 	<div id="logo" class="logo__invert hotspot" data-index="3"><?php include('partials/future-logo.php'); ?></div>
 	<div class="close-btn"><?php include('partials/close.php'); ?></div>
 
-	<div id="contact-btn" class="hotspot" data-index="3">contact<br />future</div>
+	<div id="contact-btn" class="hotspot" data-index="3">contactthefuturecontactthefuturecontactthefuturecontactthefuturecontactthefuture</div>
 
 	<div id="intro" class="intro">
 		<div class="intro__inner">
