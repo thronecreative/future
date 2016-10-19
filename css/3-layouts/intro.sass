@@ -1,0 +1,51 @@
+$hotspot_size: 80px
+
+#intro
+	
+	position: fixed
+	top: 0
+	left: 0
+	width: 100vw
+	height: 100vh
+	overflow: hidden
+	z-index: 10
+
+	.intro__background
+		+position(fixed, -100px)
+		+bg_cover("../images/future-stars-looking-up-min.jpg")
+		z-index: 1
+	
+	.intro__inner
+		min-height: 100vh
+
+	.hotspot
+		//display: none
+		+size($hotspot_size)
+		position: absolute
+		z-index: 100
+		background-color: #fff
+		text-align: center
+		line-height: $hotspot_size
+		border-radius: $hotspot_size / 2
+		cursor: pointer
+
+		.ring
+			+size($hotspot_size)
+			transition: all .2s ease-in-out
+			content: " "
+			position: absolute
+			top: 0
+			left: 0
+			border-radius: $hotspot_size / 2
+			border: #fff solid 2px
+
+		&:hover
+			.ring
+				+size($hotspot_size + 20)
+				top: -10px
+				left: -10px
+				border-radius: $hotspot_size + 20 / 2
+
+#intro-lines
+	position: relative
+	z-index: 10

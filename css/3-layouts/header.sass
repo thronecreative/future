@@ -1,0 +1,57 @@
+
+
+.logo
+	+position(fixed, 80px null null 80px)
+	width: 200px
+	z-index: 1000
+	cursor: pointer
+
+	.letter
+		transition: fill $trans_speed $trans_ease
+		fill: #fff
+	.background
+		transition: fill $trans_speed $trans_ease
+		fill: #cd2127
+
+.logo__invert
+	@extend .logo
+	.background
+		fill: #fff
+	.letter
+		fill: #cd2127
+
+	&:hover
+		.letter
+			fill: #fff
+		.background
+			fill: #cd2127
+
+
+.close-btn
+	+position(fixed, 80px 80px null null)
+	z-index: 1000
+	width: 60px
+	cursor: pointer
+
+	&:hover
+		.close
+			fill: $color_accent
+	
+	.close
+		transition: all $trans_speed $trans_ease
+
+#contact-btn
+	position: fixed
+	cursor: pointer
+	right: 20px
+	bottom: 20px
+	font-size: 40px
+	font-weight: bold
+	color: #fff
+	z-index: 1000
+	line-height: 40px
+	text-align: right
+
+
+
+

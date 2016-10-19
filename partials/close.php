@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><defs><style>.close{fill:#fff;}</style></defs><g id="Layer_2" data-name="Layer 2"><polygon class="close" points="61.41 1.41 58.59 -1.41 30 27.17 1.41 -1.41 -1.41 1.41 27.17 30 -1.41 58.59 1.41 61.41 30 32.83 58.59 61.41 61.41 58.59 32.83 30 61.41 1.41"/></g></svg>
