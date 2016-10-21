@@ -23,8 +23,12 @@
 	
 	-webkit-align-items: center
 	align-items: center
-	justify-content: center
+	justify-content: flex-end
 	height: 100vh
+	padding-left: 300px
+
+	+bp(m)
+		padding-left: 200px
 
 .page__info
 	position: relative
@@ -38,6 +42,10 @@
 	line-height: 100px
 	margin: 0 0 20px
 	font-weight: bold
+
+	+bp(m)
+		font-size: 80px
+		line-height: 80px
 
 .page__copy
 	-webkit-columns: 200px 2

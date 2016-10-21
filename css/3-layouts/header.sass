@@ -6,6 +6,10 @@
 	z-index: 1000
 	cursor: pointer
 
+	+bp(m)
+		+position(fixed, 40px null null 40px)
+		width: 150px
+
 	.letter
 		transition: fill $trans_speed $trans_ease
 		fill: #fff
@@ -33,6 +37,9 @@
 	width: 60px
 	cursor: pointer
 
+	+bp(m)
+		+position(fixed, 20px 20px null null)
+
 	&:hover
 		.close
 			fill: $color_accent
@@ -44,7 +51,7 @@
 	transition: all $trans_speed $trans_ease
 	position: fixed
 	cursor: pointer
-	right: -20px
+	right: 20px
 	bottom: 20px
 	font-size: 40px
 	font-weight: bold

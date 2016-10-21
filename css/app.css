@@ -3176,6 +3176,12 @@ a {
   width: 200px;
   z-index: 1000;
   cursor: pointer; }
+  @media (max-width: 1200px) {
+    .logo, .logo__invert {
+      position: fixed;
+      top: 40px;
+      left: 40px;
+      width: 150px; } }
   .logo .letter, .logo__invert .letter {
     transition: fill 0.3s ease-in-out;
     fill: #fff; }
@@ -3197,6 +3203,11 @@ a {
   z-index: 1000;
   width: 60px;
   cursor: pointer; }
+  @media (max-width: 1200px) {
+    .close-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px; } }
   .close-btn:hover .close {
     fill: #cd2127; }
   .close-btn .close {
@@ -3206,7 +3217,7 @@ a {
   transition: all 0.3s ease-in-out;
   position: fixed;
   cursor: pointer;
-  right: -20px;
+  right: 20px;
   bottom: 20px;
   font-size: 40px;
   font-weight: bold;
@@ -3290,8 +3301,12 @@ a {
   display: flex;
   -webkit-align-items: center;
   align-items: center;
-  justify-content: center;
-  height: 100vh; }
+  justify-content: flex-end;
+  height: 100vh;
+  padding-left: 300px; }
+  @media (max-width: 1200px) {
+    .page__inner {
+      padding-left: 200px; } }
 
 .page__info {
   position: relative;
@@ -3305,6 +3320,10 @@ a {
   line-height: 100px;
   margin: 0 0 20px;
   font-weight: bold; }
+  @media (max-width: 1200px) {
+    .page__heading {
+      font-size: 80px;
+      line-height: 80px; } }
 
 .page__copy {
   -webkit-columns: 200px 2;
@@ -3325,7 +3344,7 @@ a {
   color: #fff; }
   #voice .page__inner {
     justify-content: flex-end;
-    padding-right: 300px; }
+    padding-right: 350px; }
   #voice .page__art {
     width: 100%;
     text-align: right; }
@@ -3351,7 +3370,15 @@ a {
   background-color: #cd2127;
   color: #fff; }
   #invest .page__info {
-    max-width: 1200px; }
+    max-width: 1000px;
+    padding-right: 40px; }
+  #invest .page__heading {
+    font-size: 80px;
+    line-height: 80px; }
+    @media (max-width: 1200px) {
+      #invest .page__heading {
+        font-size: 60px;
+        line-height: 60px; } }
   #invest #gear-1 {
     width: 100%;
     bottom: -100px;
