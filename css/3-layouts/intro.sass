@@ -13,7 +13,7 @@ $hotspot_size: 80px
 
 	.intro__background
 		+position(fixed, -100px)
-		+bg_cover("../images/future-stars-looking-up-min.jpg")
+		+bg_cover("../images/Composition-No-guy-small-min.jpg")
 		z-index: 1
 	
 	.intro__inner
@@ -22,6 +22,7 @@ $hotspot_size: 80px
 	.hotspot
 		//display: none
 		+size($hotspot_size)
+		
 		position: absolute
 		z-index: 100
 		background-color: #fff
@@ -41,6 +42,8 @@ $hotspot_size: 80px
 			border: #fff solid 2px
 
 		&:hover
+			
+
 			.ring
 				+size($hotspot_size + 20)
 				top: -10px
@@ -50,3 +53,11 @@ $hotspot_size: 80px
 #intro-lines
 	position: relative
 	z-index: 10
+
+
+
+.intro__guy
+	+position(fixed, -100px)
+	+bg_cover("../images/Composition-Guy-Only.png")
+	bottom: -200px
+	z-index: 5

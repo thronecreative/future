@@ -3194,7 +3194,9 @@ a {
 .logo__invert .letter {
   fill: #cd2127; }
 .logo__invert:hover .letter {
-  fill: #333; }
+  fill: #fff; }
+.logo__invert:hover .background {
+  fill: #cd2127; }
 
 .close-btn {
   position: fixed;
@@ -3219,14 +3221,14 @@ a {
   cursor: pointer;
   right: 20px;
   bottom: 20px;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   color: #fff;
   z-index: 50;
   line-height: 40px;
   text-align: right; }
   #contact-btn:hover {
-    color: #333; }
+    color: #cd2127; }
 
 #intro {
   position: fixed;
@@ -3243,7 +3245,7 @@ a {
     right: -100px;
     bottom: -100px;
     left: -100px;
-    background: url("../images/future-stars-looking-up-min.jpg") no-repeat center bottom fixed;
+    background: url("../images/Composition-No-guy-small-min.jpg") no-repeat center bottom fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -3282,6 +3284,21 @@ a {
 #intro-lines {
   position: relative;
   z-index: 10; }
+
+.intro__guy {
+  position: fixed;
+  top: -100px;
+  right: -100px;
+  bottom: -100px;
+  left: -100px;
+  background: url("../images/Composition-Guy-Only.png") no-repeat center bottom fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 60vh;
+  bottom: -200px;
+  z-index: 5; }
 
 .page {
   position: fixed;

@@ -12,6 +12,7 @@
 			<div class="hotspot dot" data-index="2">iii<span class="ring"></span></div>
 			<canvas id="intro-lines" width="1000" height="500" class="canvas--responsive"></canvas>
 		</div>
+		<div class="intro__guy"></div>
 		<div class="intro__background"></div>
 	</div>
 
