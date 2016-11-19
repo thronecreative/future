@@ -352,7 +352,7 @@ $( document ).ready(function() {
 			$logo.removeClass('logo')
 		}
 
-		if(index == 2 || index == 3){
+		if(index == 3 || index == 1){
 			$('.close').css({'fill' : "#cd2127"}, 300)
 		}else{
 			$('.close').css({'fill' : "#fff"}, 300)

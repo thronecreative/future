@@ -3238,14 +3238,14 @@ a {
   height: 100vh;
   overflow: hidden;
   z-index: 10;
-  background-color: #cd2127; }
+  background-color: #2e0303; }
   #intro .intro__background {
     position: fixed;
     top: -100px;
     right: -100px;
     bottom: -100px;
     left: -100px;
-    background: url("../images/Composition-No-guy-small-min.jpg") no-repeat center bottom fixed;
+    background: url("../images/Composition-No-guy-small-min.jpg") no-repeat center bottom;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -3291,7 +3291,7 @@ a {
   right: -100px;
   bottom: -100px;
   left: -100px;
-  background: url("../images/Composition-Guy-Only.png") no-repeat center bottom fixed;
+  background: url("../images/Composition-Guy-Only.png") no-repeat center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -3362,19 +3362,21 @@ a {
   #voice .page__inner {
     justify-content: flex-end;
     padding-right: 350px; }
+  #voice .page__info .accent {
+    color: #cd2127; }
   #voice .page__art {
     width: 100%;
     text-align: right; }
     #voice .page__art img {
       width: auto;
-      height: 120vh; }
+      height: 110vh; }
   #voice #scream-1 {
-    top: -50px;
-    right: -20vh;
+    top: 20px;
+    right: -30vh;
     z-index: 1; }
   #voice #scream-2 {
-    top: 50px;
-    right: -35vh;
+    top: 200px;
+    right: -45vh;
     z-index: 200; }
 
 #voice-canvas {
