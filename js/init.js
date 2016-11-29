@@ -344,7 +344,7 @@ $( document ).ready(function() {
 		var 	index = $(this).data('index'),
 				$page = $('[data-hotspot="' + index + '"]');
 
-		if(index == 2 || index == 0 || index == 3){
+		if(index == 1 || index == 0 || index == 3){
 			$logo.removeClass('logo__invert')
 			$logo.addClass('logo')
 		}else{

@@ -3361,7 +3361,7 @@ a {
   color: #fff; }
   #voice .page__inner {
     justify-content: flex-end;
-    padding-right: 350px; }
+    padding-right: 400px; }
   #voice .page__info .accent {
     color: #cd2127; }
   #voice .page__art {
@@ -3398,17 +3398,19 @@ a {
       #invest .page__heading {
         font-size: 60px;
         line-height: 60px; } }
+  #invest .accent {
+    color: #333; }
   #invest #gear-1 {
     width: 100%;
-    bottom: -100px;
+    bottom: 0;
     left: -200px;
-    height: 90vh; }
+    height: 50vh; }
     #invest #gear-1 img {
-      height: 90vh;
+      height: 50vh;
       width: auto; }
   #invest #gear-2 {
     width: 100%;
-    top: -200px;
+    top: 0;
     right: -100px;
     text-align: right; }
     #invest #gear-2 img {
@@ -3425,6 +3427,8 @@ a {
   #astro .page__inner {
     justify-content: flex-end;
     padding-right: 300px; }
+  #astro .accent {
+    color: #333; }
   #astro .page__art img {
     height: 100%;
     width: auto; }

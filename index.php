@@ -20,7 +20,7 @@
 		<div class="page__inner">
 			<div class="page__info">
 				<h1 class="page__heading">the future needs vision. voice.</h1>
-				<div class="page__copy">We're looking for <span class="accent">founders taking on global scale problems</span> with innovative and radical solutions to create a 10x improvement and shatter the status quo.  The world needs founders with audacious vision.  Founders straining to <span class="accent">BUILD the future</span> and <span class="accent">CHANGE the world</span> and doing so much more than creating the next box of the month club or trying to make you click on ads.</div>
+				<div class="page__copy">We're looking for <span class="accent">founders taking on global scale problems</span> with innovative and radical solutions to create a 10x improvement and shatter the status quo.  The world needs founders with audacious vision. Founder straining to <span class="accent">BUILD</span> the future and <span class="accent">CHANGE</span> the world. Founders doing so much more than creating the next box of the month club or getting you to click on more ads.</div>
 			</div>
 			
 			<div id="scream-1" class="page__art"><img src="images/future-screaming-min.png" alt=""></div>
@@ -38,12 +38,12 @@
 			<div class="page__info">
 				<h1 class="page__heading">we’re investing in founders and companies disrupting markets through technology.</h1>
 
-				<div class="page__copy">We're investing in TRANSFORMATIVE businesses disrupting MASSIVE markets with INNOVATIVE solutions.  We need VISIONARIES, striving to change the world. Entrepreneurs fighting for the fate of the FUTURE.  Join us.</div>
+				<div class="page__copy">We're investing in <span class="accent">TRANSFORMATIVE</span> businesses disrupting <span class="accent">MASSIVE</span> markets with <span class="accent">INNOVATIVE</span> solutions.  We need <span class="accent">VISIONARIES</span>, striving to change the world. Entrepreneurs fighting for the fate of the <span class="accent">FUTURE.</span>  Join us.</div>
 				
 			</div>
 			
-			<div id="gear-1" class="page__art"><img src="images/space-gear2.png" alt=""></div>
-			<div id="gear-2" class="page__art"><img src="images/space-gear2-red.png" alt=""></div>
+			<div id="gear-1" class="page__art"><img src="images/drone.png" alt=""></div>
+			<div id="gear-2" class="page__art"><img src="images/drone-red.png" alt=""></div>
 
 			<canvas id="invest-canvas" width="1000" height="500"></canvas>
 		</div>
@@ -53,7 +53,7 @@
 		<div class="page__inner">
 			<div class="page__info">
 				<h1 class="page__heading">the future needs dreamers.</h1>
-				<div class="page__copy">what happened to space colonies? and DNA hacking? and underwater cities? and flying cars? and teleportation? and artificial intelligence? and big ole silly, crazy, IMPOSSIBLE ideas that slowly seem to become NOT so impossible and  lead to the bedrock of innovation?</div>
+				<div class="page__copy">what happened to space colonies? and <span class="accent">DNA hacking?</span> and underwater cities? and flying cars? and <span class="accent">teleportation?</span> and artificial intelligence? and big ole silly, crazy, <span class="accent">IMPOSSIBLE</span> ideas that slowly seem to become NOT so impossible and  lead to the bedrock of innovation?</div>
 			</div>
 			
 			<div id="astro-1" class="page__art"><img src="images/astro.png" alt=""></div>
