@@ -10,6 +10,11 @@
 	z-index: 100
 	background-color: #fff
 	overflow: hidden
+	
+	+bp(s)
+		//overflow: auto
+		position: relative
+
 
 .page__inner
 	//+display(flex)
@@ -24,13 +29,27 @@
 	-webkit-align-items: center
 	align-items: center
 	justify-content: flex-end
+
 	height: 100vh
 	padding-left: 300px
 
 	+bp(m)
 		padding-left: 200px
 
+	+bp(s)
+		padding-left: 0
+		display: -webkit-box
+		display: block
+		display: block
+		display: block
+		display: block
+		
+		-webkit-align-items: center
+		align-items: center
+		justify-content: flex-end
+
 .page__info
+	+clearfix
 	position: relative
 	max-width: 800px
 	text-align: right
@@ -47,6 +66,10 @@
 		font-size: 80px
 		line-height: 80px
 
+	+bp(s)
+		font-size: 40px
+		line-height: 40px
+
 .page__copy
 	-webkit-columns: 200px 2
 	-moz-columns: 200px 2
@@ -55,6 +78,9 @@
 	float: right
 	margin-right: 100px
 	font-weight: bold
+
+	+bp(s)
+		margin-right: 0
 
 .page__art
 	position: fixed

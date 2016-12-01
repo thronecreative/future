@@ -10,6 +10,10 @@
 		+position(fixed, 40px null null 40px)
 		width: 150px
 
+	+bp(s)
+		+position(fixed, 20px null null 20px)
+		width: 100px
+
 	.letter
 		transition: fill $trans_speed $trans_ease
 		fill: #fff
@@ -39,6 +43,9 @@
 
 	+bp(m)
 		+position(fixed, 20px 20px null null)
+
+	+bp(s)
+		width: 40px
 
 	&:hover
 		.close

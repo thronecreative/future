@@ -3182,6 +3182,12 @@ a {
       top: 40px;
       left: 40px;
       width: 150px; } }
+  @media (max-width: 700px) {
+    .logo, .logo__invert {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      width: 100px; } }
   .logo .letter, .logo__invert .letter {
     transition: fill 0.3s ease-in-out;
     fill: #fff; }
@@ -3210,6 +3216,9 @@ a {
       position: fixed;
       top: 20px;
       right: 20px; } }
+  @media (max-width: 700px) {
+    .close-btn {
+      width: 40px; } }
   .close-btn:hover .close {
     fill: #cd2127; }
   .close-btn .close {
@@ -3264,6 +3273,12 @@ a {
     line-height: 80px;
     border-radius: 40px;
     cursor: pointer; }
+    @media (max-width: 700px) {
+      #intro .hotspot {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        border-radius: 20px; } }
     #intro .hotspot .ring {
       height: 80px;
       width: 80px;
@@ -3274,12 +3289,22 @@ a {
       left: 0;
       border-radius: 40px;
       border: #fff solid 2px; }
+      @media (max-width: 700px) {
+        #intro .hotspot .ring {
+          height: 40px;
+          width: 40px; } }
     #intro .hotspot:hover .ring {
       height: 100px;
       width: 100px;
       top: -10px;
       left: -10px;
       border-radius: 90px; }
+      @media (max-width: 700px) {
+        #intro .hotspot:hover .ring {
+          height: 50px;
+          width: 50px;
+          top: -5px;
+          left: -5px; } }
 
 #intro-lines {
   position: relative;
@@ -3309,6 +3334,9 @@ a {
   z-index: 100;
   background-color: #fff;
   overflow: hidden; }
+  @media (max-width: 700px) {
+    .page {
+      position: relative; } }
 
 .page__inner {
   display: -webkit-box;
@@ -3324,12 +3352,27 @@ a {
   @media (max-width: 1200px) {
     .page__inner {
       padding-left: 200px; } }
+  @media (max-width: 700px) {
+    .page__inner {
+      padding-left: 0;
+      display: -webkit-box;
+      display: block;
+      display: block;
+      display: block;
+      display: block;
+      -webkit-align-items: center;
+      align-items: center;
+      justify-content: flex-end; } }
 
 .page__info {
   position: relative;
   max-width: 800px;
   text-align: right;
   z-index: 100; }
+  .page__info::after {
+    clear: both;
+    content: "";
+    display: block; }
 
 .page__heading {
   font-size: 100px;
@@ -3341,6 +3384,10 @@ a {
     .page__heading {
       font-size: 80px;
       line-height: 80px; } }
+  @media (max-width: 700px) {
+    .page__heading {
+      font-size: 40px;
+      line-height: 40px; } }
 
 .page__copy {
   -webkit-columns: 200px 2;
@@ -3350,18 +3397,35 @@ a {
   float: right;
   margin-right: 100px;
   font-weight: bold; }
+  @media (max-width: 700px) {
+    .page__copy {
+      margin-right: 0; } }
 
 .page__art {
   position: fixed;
   z-index: 1; }
 
 #voice {
-  display: none;
   background-color: #333;
-  color: #fff; }
+  color: #fff;
+  height: 100vh; }
+  @media (max-width: 700px) {
+    #voice {
+      height: auto; } }
   #voice .page__inner {
     justify-content: flex-end;
-    padding-right: 400px; }
+    padding-right: 400px;
+    height: 100vh; }
+    @media (max-width: 700px) {
+      #voice .page__inner {
+        padding-right: 20px;
+        height: auto; } }
+  @media (max-width: 700px) {
+    #voice .page__info {
+      margin-top: 80vh;
+      padding: 20px;
+      background-color: #111;
+      margin-bottom: 80px; } }
   #voice .page__info .accent {
     color: #cd2127; }
   #voice .page__art {
@@ -3369,7 +3433,8 @@ a {
     text-align: right; }
     #voice .page__art img {
       width: auto;
-      height: 110vh; }
+      height: 110vh;
+      max-width: auto; }
   #voice #scream-1 {
     top: 20px;
     right: -30vh;
@@ -3378,11 +3443,18 @@ a {
     top: 200px;
     right: -45vh;
     z-index: 200; }
+    @media (max-width: 700px) {
+      #voice #scream-2 {
+        top: 80px;
+        z-index: 1; } }
 
 #voice-canvas {
   position: absolute;
   top: 0;
   left: 0; }
+  @media (max-width: 700px) {
+    #voice-canvas {
+      display: none; } }
 
 #invest {
   display: none;

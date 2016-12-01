@@ -1,16 +1,31 @@
 
 
 #voice
-	display: none
+	//display: none
 	background-color: #333
 	color: #fff
+	height: 100vh
+
+	+bp(s)
+		height: auto
 
 	.page__inner
 		justify-content: flex-end
 		padding-right: 400px
+		height: 100vh
+
+		+bp(s)
+			padding-right: 20px
+			height: auto
 
 	.page__info
 		//height: 600px
+		
+		+bp(s)
+			margin-top: 80vh
+			padding: 20px
+			background-color: #111
+			margin-bottom: 80px
 		
 		.accent
 			color: $color_accent
@@ -23,6 +38,7 @@
 		img
 			width: auto
 			height: 110vh
+			max-width: auto
 
 	#scream-1
 		top: 20px
@@ -31,16 +47,26 @@
 		//margin-left: -500
 		z-index: 1
 
+		+bp(s)
+			//display: none
+
 	#scream-2
 		top: 200px
 		right: -45vh
 		z-index: 200
+
+		+bp(s)
+			top: 80px
+			z-index: 1
 
 #voice-canvas
 	//display: none
 	position: absolute
 	top: 0
 	left: 0
+
+	+bp(s)
+		display: none
 	
 
 
