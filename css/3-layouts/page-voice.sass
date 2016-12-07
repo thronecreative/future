@@ -1,7 +1,7 @@
 
 
 #voice
-	//display: none
+	display: none
 	background-color: #333
 	color: #fff
 	height: 100vh
@@ -38,7 +38,7 @@
 		img
 			width: auto
 			height: 110vh
-			max-width: auto
+			max-width: inherit
 
 	#scream-1
 		top: 20px
@@ -48,7 +48,8 @@
 		z-index: 1
 
 		+bp(s)
-			//display: none
+			right: -10vh
+			top: -40px
 
 	#scream-2
 		top: 200px
@@ -56,8 +57,9 @@
 		z-index: 200
 
 		+bp(s)
-			top: 80px
+			top: 20px
 			z-index: 1
+			right: -20vh
 
 #voice-canvas
 	//display: none

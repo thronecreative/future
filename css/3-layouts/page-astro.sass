@@ -3,9 +3,26 @@
 #astro
 	display: none
 	
+	+bp(s)
+		height: auto
+	
 	.page__inner
 		justify-content: flex-end
 		padding-right: 300px
+		
+
+		+bp(s)
+			padding-right: 20px
+			height: auto
+
+
+
+	.page__info
+		+bp(s)
+			margin-top: 80vh
+			padding: 20px
+			background-color: #f1f1f1
+			margin-bottom: 80px
 
 	.accent
 		color: #333
@@ -14,11 +31,17 @@
 		img
 			height: 100%
 			width: auto
+
 	#astro-1
 		right: 100px
 		bottom: 0
 		height: 50vh
 		z-index: 100
+
+		+bp(s)
+			right: -20px
+			bottom: 20vh
+
 	
 	#astro-2
 		-webkit-transform: rotate(-25deg)
@@ -50,6 +73,9 @@
 	position: absolute
 	top: 0
 	left: 0
+
+	+bp(s)
+		display: none
 
 
 

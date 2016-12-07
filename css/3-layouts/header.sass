@@ -6,6 +6,12 @@
 	z-index: 1000
 	cursor: pointer
 
+	&:hover
+		.letter
+			fill: $color_accent
+		.background
+			fill: #fff
+
 	+bp(m)
 		+position(fixed, 40px null null 40px)
 		width: 150px

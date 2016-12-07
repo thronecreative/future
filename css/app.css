@@ -3176,6 +3176,10 @@ a {
   width: 200px;
   z-index: 1000;
   cursor: pointer; }
+  .logo:hover .letter, .logo__invert:hover .letter {
+    fill: #cd2127; }
+  .logo:hover .background, .logo__invert:hover .background {
+    fill: #fff; }
   @media (max-width: 1200px) {
     .logo, .logo__invert {
       position: fixed;
@@ -3406,6 +3410,7 @@ a {
   z-index: 1; }
 
 #voice {
+  display: none;
   background-color: #333;
   color: #fff;
   height: 100vh; }
@@ -3434,19 +3439,24 @@ a {
     #voice .page__art img {
       width: auto;
       height: 110vh;
-      max-width: auto; }
+      max-width: inherit; }
   #voice #scream-1 {
     top: 20px;
     right: -30vh;
     z-index: 1; }
+    @media (max-width: 700px) {
+      #voice #scream-1 {
+        right: -10vh;
+        top: -40px; } }
   #voice #scream-2 {
     top: 200px;
     right: -45vh;
     z-index: 200; }
     @media (max-width: 700px) {
       #voice #scream-2 {
-        top: 80px;
-        z-index: 1; } }
+        top: 20px;
+        z-index: 1;
+        right: -20vh; } }
 
 #voice-canvas {
   position: absolute;
@@ -3460,9 +3470,22 @@ a {
   display: none;
   background-color: #cd2127;
   color: #fff; }
+  @media (max-width: 700px) {
+    #invest {
+      height: auto; } }
+  @media (max-width: 700px) {
+    #invest .page__inner {
+      padding-right: 20px;
+      height: auto; } }
   #invest .page__info {
     max-width: 1000px;
     padding-right: 40px; }
+    @media (max-width: 700px) {
+      #invest .page__info {
+        margin-top: 80vh;
+        padding: 20px;
+        background-color: #b71d23;
+        margin-bottom: 80px; } }
   #invest .page__heading {
     font-size: 80px;
     line-height: 80px; }
@@ -3470,6 +3493,10 @@ a {
       #invest .page__heading {
         font-size: 60px;
         line-height: 60px; } }
+    @media (max-width: 700px) {
+      #invest .page__heading {
+        font-size: 40px;
+        line-height: 40px; } }
   #invest .accent {
     color: #333; }
   #invest #gear-1 {
@@ -3479,7 +3506,12 @@ a {
     height: 50vh; }
     #invest #gear-1 img {
       height: 50vh;
-      width: auto; }
+      width: auto;
+      max-width: inherit; }
+    @media (max-width: 700px) {
+      #invest #gear-1 {
+        left: -200px;
+        bottom: 20vh; } }
   #invest #gear-2 {
     width: 100%;
     top: 0;
@@ -3488,17 +3520,39 @@ a {
     #invest #gear-2 img {
       height: auto;
       width: 50vw; }
+    @media (max-width: 700px) {
+      #invest #gear-2 {
+        right: -20px;
+        bottom: 20vh; }
+        #invest #gear-2 img {
+          width: 70vw; } }
 
 #invest-canvas {
   position: absolute;
   top: 0;
   left: 0; }
+  @media (max-width: 700px) {
+    #invest-canvas {
+      display: none; } }
 
 #astro {
   display: none; }
+  @media (max-width: 700px) {
+    #astro {
+      height: auto; } }
   #astro .page__inner {
     justify-content: flex-end;
     padding-right: 300px; }
+    @media (max-width: 700px) {
+      #astro .page__inner {
+        padding-right: 20px;
+        height: auto; } }
+  @media (max-width: 700px) {
+    #astro .page__info {
+      margin-top: 80vh;
+      padding: 20px;
+      background-color: #f1f1f1;
+      margin-bottom: 80px; } }
   #astro .accent {
     color: #333; }
   #astro .page__art img {
@@ -3509,6 +3563,10 @@ a {
     bottom: 0;
     height: 50vh;
     z-index: 100; }
+    @media (max-width: 700px) {
+      #astro #astro-1 {
+        right: -20px;
+        bottom: 20vh; } }
   #astro #astro-2 {
     -webkit-transform: rotate(-25deg);
     -moz-transform: rotate(-25deg);
@@ -3535,16 +3593,23 @@ a {
   position: absolute;
   top: 0;
   left: 0; }
+  @media (max-width: 700px) {
+    #astro-canvas {
+      display: none; } }
 
 #contact {
-  display: none; }
+  display: none;
+  height: 100vh; }
   #contact .page__info {
     max-width: none;
-    padding-right: 40px; }
+    padding-right: 40px;
+    padding-top: 120px; }
   #contact .page__inner {
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    height: 100vh; }
   #contact .page__heading {
-    line-height: 100px; }
+    font-size: 70px;
+    line-height: 70px; }
   #contact .page__copy {
     margin-right: 0;
     max-width: 100%;
@@ -3559,5 +3624,8 @@ a {
   position: absolute;
   top: 0;
   left: 0; }
+  @media (max-width: 700px) {
+    #contact-canvas {
+      display: none; } }
 
 /*# sourceMappingURL=app.css.map */
